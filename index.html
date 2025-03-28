@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Follow Allyssa's journey from the Philippines to traveling the world, sharing authentic stories of transformation, culture, and growth.">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <title>My First Web Design | ALLYSSA</title>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <header class="header" id="home" role="banner">
+            <nav aria-label="Main navigation">
+                <div class="nav_bar">
+                    <div class="logo nav__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <ul class="nav__links" id="nav-links" role="menubar">
+                        <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Home</a></li>
+                        <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+                        <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                        <li role="none"><a href="gallery.html" role="menuitem">Travel Gallery</a></li>
+                        <li role="none"><a href="community.html" role="menuitem">Community</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                    <div class="nav__menu__btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+                        <i class="ri-menu-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="nav__action__btn">
+                        <button class="btn" id="account-btn" aria-label="Account" aria-expanded="false" aria-controls="account-dropdown">
+                            <span><i class="ri-user-line" aria-hidden="true"></i></span> Account
+                        </button>
+                        <div class="account-dropdown" id="account-dropdown">
+                            <div class="account-dropdown__content">
+                                <a href="login.html" class="account-link"><i class="ri-login-box-line" aria-hidden="true"></i> Login</a>
+                                <a href="register.html" class="account-link"><i class="ri-user-add-line" aria-hidden="true"></i> Register</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="settings.html" class="account-link"><i class="ri-settings-line" aria-hidden="true"></i> Settings</a>
+                                <a href="help.html" class="account-link"><i class="ri-question-line" aria-hidden="true"></i> Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="section__container header__container">
+                <div class="header__content">
+                    <h3 class="section__subheader">ALLYSSA's Life in Progress</h3>
+                    <h1 class="section__header">
+                        Journeys of Self Discovery & Global Exploration
+                    </h1>
+                    <p class="header__description">
+                        Follow my path from the Philippines to traveling the world, sharing authentic stories of transformation, culture, and growth. Let's explore life's beautiful moments together.
+                    </p>
+                    <div class="header__cta">
+                        <a href="blog.html" class="primary-btn">Read My Stories</a>
+                        <a href="gallery.html" class="secondary-btn">View Photo Gallery</a>
+                    </div>
+                    <div class="scroll__btn">
+                        <a href="#featured-posts" aria-label="Scroll down to featured posts">
+                            Scroll down
+                            <span><i class="ri-arrow-down-line" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__socials">
+                    <span>Follow me</span>
+                    <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>                 
+                    <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>     
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- Featured Posts Section -->
+            <section class="featured-posts" id="featured-posts" aria-labelledby="featured-posts-heading">
+                <div class="section__container">
+                    <h3 class="section__subheader">Latest Adventures</h3>
+                    <h2 class="section__header" id="featured-posts-heading">Featured Blog Posts</h2>
+                    
+                    <div class="posts-grid">
+                        <!-- Featured Post 1 -->
+                        <div class="post-card">
+                            <div class="post-image">
+                                <img src="img/PH 2011.jpg" alt="Scenic view of tropical beach in the Philippines with palm trees and crystal clear water" class="responsive-img">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">March 15, 2025</div>
+                                <h3 class="post-title">From Philippines to the World</h3>
+                                <p class="post-excerpt">
+                                    My journey began in the Philippines, where life was synchronized to the beat of tropical rain and warm sun. This is where my story begins...
+                                </p>
+                                <a href="blog-post.html" class="post-link">
+                                    Read more <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Post 2 -->
+                        <div class="post-card">
+                            <div class="post-image">
+                                <img src="img/mont blanc 1.jpg" alt="Majestic view of Mont Blanc mountain peaks with snow-capped summits against blue sky" class="responsive-img">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">March 10, 2025</div>
+                                <h3 class="post-title">Embracing Life in Europe</h3>
+                                <p class="post-excerpt">
+                                    Moving to Dublin at 15 changed everything. The culture shock, the adaptation, and the growth that followed shaped who I am today...
+                                </p>
+                                <a href="blog-post.html" class="post-link">
+                                    Read more <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Post 3 -->
+                        <div class="post-card">
+                            <div class="post-image">
+                                <img src="img/PH1 2011.jpg" alt="Busy Filipino market with colorful produce and local vendors in a vibrant atmosphere" class="responsive-img">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">March 5, 2025</div>
+                                <h3 class="post-title">Lessons From the Road Less Traveled</h3>
+                                <p class="post-excerpt">
+                                    What the public doesn't see is the arduous climb filled with setbacks and difficulties that came before the success and adventure...
+                                </p>
+                                <a href="blog-post.html" class="post-link">
+                                    Read more <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="view-all-btn">
+                        <a href="blog.html" class="primary-btn">View All Posts</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Preview Section -->
+            <section class="about" aria-labelledby="about-section-heading">
+                <div class="section__container about__container">
+                    <div class="about__image about__image-1" id="about">
+                        <img src="img/Barcelona 3.jpg" alt="Panoramic view of Barcelona cityscape showcasing Gaudi's architecture" loading="lazy" class="responsive-img">
+                    </div>
+                    <div class="about__content about__content-1">
+                        <h3 class="section__subheader">The Future is Female</h3>
+                        <h2 class="section__header" id="about-section-heading">Hey! Allyssa's here</h2>
+                        <p>
+                            Welcome to our safe space. Join me as 
+                            I share with you my life's journey.
+                        </p>
+                        <div class="about__btn">
+                            <a href="about.html">
+                                Read more
+                                <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__image about__image-2" id="blog">
+                        <img src="img/vigan2_2022.jpg" alt="Historical cobblestone street in Vigan with Spanish colonial architecture" loading="lazy" class="responsive-img">
+                    </div>
+                    <div class="about__content about__content-2">
+                        <h3 class="section__subheader">Beyond the Surface</h3>
+                        <h2 class="section__header">The Real Journey</h2>
+                        <p>
+                           People have this notion that my life is all about 
+                           rainbows and sunshine, as I am always on the road,
+                           out there exploring the world and "living the life."
+                           What the public doesn't see is the arduous climb 
+                           filled with setbacks and difficulties that came before.
+                        </p>
+                        <div class="about__btn">
+                            <a href="blog.html">
+                                Explore my stories
+                                <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__image about__image-3">
+                        <img src="img/mont blanc 2.jpg" alt="Serene alpine lake reflecting Mont Blanc mountain range" loading="lazy" class="responsive-img">
+                    </div>
+                    <div class="about__content about__content-3">
+                        <h3 class="section__subheader">Join Me</h3>
+                        <h2 class="section__header">Your Journey Begins</h2>
+                        <p>
+                            You are more than welcome to take a peek
+                            inside this journey. Perhaps learn a thing or two
+                            or walk with me in this thing we call life.
+
+                            Welcome to my Life In Progress!
+                        </p>
+                        <div class="about__btn">
+                            <a href="community.html">
+                                Join our community
+                                <span><i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials" aria-labelledby="testimonials-heading">
+                <div class="section__container">
+                    <h3 class="section__subheader">Community Voices</h3>
+                    <h2 class="section__header" id="testimonials-heading">What Friends Say</h2>
+                    
+                    <div class="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Following Allyssa's journey has inspired me to start my own travel adventures. Her authentic stories about both the challenges and joys make the journey feel real and attainable."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="/api/placeholder/50/50" alt="Headshot of Sarah J." loading="lazy" class="responsive-img">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah J.</h4>
+                                    <p>Fellow Traveler</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"What I love most about Allyssa's stories is how she connects her Filipino roots with her global experiences. It's a beautiful reminder that our backgrounds enrich our journeys rather than limit them."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="/api/placeholder/50/50" alt="Headshot of Miguel L." loading="lazy" class="responsive-img">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Miguel L.</h4>
+                                    <p>Community Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The photography and storytelling on this site have given me a new perspective on travel. It's not just about the destinations but the transformations that happen along the way."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="/api/placeholder/50/50" alt="Headshot of Emma T." loading="lazy" class="responsive-img">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Emma T.</h4>
+                                    <p>Photography Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="cta-section" aria-labelledby="cta-heading">
+                <div class="section__container">
+                    <h2 class="section__header" id="cta-heading">Ready to Start Your Own Journey?</h2>
+                    <p>Join our community of travelers and storytellers. Subscribe for updates, travel tips, and exclusive content.</p>
+                    <div class="cta-buttons">
+                        <a href="community.html" class="primary-btn">Join the Community</a>
+                        <a href="contact.html" class="secondary-btn">Get in Touch</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <div class="logo footer__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <p>
+                        "Progressing together in this called Life."
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Follow me on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow me on Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 id="community-links">Join Our Empowered Community</h4>
+                    <ul class="footer__links" aria-labelledby="community-links">
+                        <li><a href="about.html">About AMF</a></li>
+                        <li><a href="blog.html">Contributors & Writers</a></li>
+                        <li><a href="community.html">Write For Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="explore-links">Explore</h4>
+                    <ul class="footer__links" aria-labelledby="explore-links">
+                        <li><a href="about.html">My Story</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="blog.html">Blog Posts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="subscribe-heading">Subscribe</h4>
+                    <p>Stay updated with my latest adventures</p>
+                    <form class="footer-form" aria-labelledby="subscribe-heading">
+                        <label for="footer-email" class="sr-only">Your email</label>
+                        <input type="email" id="footer-email" placeholder="Your email" aria-label="Your email" required>
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="ri-send-plane-fill" aria-hidden="true"></i></button>
+                    </form>
+                    <div id="newsletter-status" aria-live="polite"></div>
+                </div>
+            </div>
+            <div class="footer__bar">
+                <p>© 2025 Allyssa's Life in Progress. All rights reserved.</p>
+                <p>We respect your privacy.</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

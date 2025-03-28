@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Get in touch with Allyssa - for collaboration opportunities, travel advice, or just to share your own stories.">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Contact | ALLYSSA</title>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <header class="header header-small" role="banner">
+            <nav aria-label="Main navigation">
+                <div class="nav_bar">
+                    <div class="logo nav__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <ul class="nav__links" id="nav-links" role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+                        <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                        <li role="none"><a href="gallery.html" role="menuitem">Travel Gallery</a></li>
+                        <li role="none"><a href="community.html" role="menuitem">Community</a></li>
+                        <li role="none"><a href="contact.html" class="active" role="menuitem" aria-current="page">Contact</a></li>
+                    </ul> 
+                    <div class="nav__menu__btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+                        <i class="ri-menu-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="nav__action__btn">
+                        <button class="btn" id="account-btn" aria-label="Account" aria-expanded="false" aria-controls="account-dropdown">
+                            <span><i class="ri-user-line" aria-hidden="true"></i></span> Account
+                        </button>
+                        <div class="account-dropdown" id="account-dropdown">
+                            <div class="account-dropdown__content">
+                                <a href="login.html" class="account-link"><i class="ri-login-box-line" aria-hidden="true"></i> Login</a>
+                                <a href="register.html" class="account-link"><i class="ri-user-add-line" aria-hidden="true"></i> Register</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="settings.html" class="account-link"><i class="ri-settings-line" aria-hidden="true"></i> Settings</a>
+                                <a href="help.html" class="account-link"><i class="ri-question-line" aria-hidden="true"></i> Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="contact-hero">
+                <div class="section__container">
+                    <h3 class="section__subheader">Let's Connect</h3>
+                    <h1 class="section__header">Get in Touch</h1>
+                    <p class="header__description">Whether you have a question, want to collaborate, or just want to say hello - I'd love to hear from you!</p>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- Contact Section -->
+            <section class="contact-section" aria-labelledby="contact-heading">
+                <div class="section__container">
+                    <div class="contact-container">
+                        <!-- Contact Information -->
+                        <div class="contact-info">
+                            <h2 class="section__header" id="contact-heading">Contact Information</h2>
+                            <p>Feel free to reach out through any of the channels below. I'm always open to connecting with fellow travelers, potential collaborators, or anyone with questions about my journey.</p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon" aria-hidden="true">
+                                        <i class="ri-mail-line"></i>
+                                    </div>
+                                    <div class="method-details">
+                                        <h4 id="email-contact">Email</h4>
+                                        <p aria-labelledby="email-contact">
+                                            <a href="mailto:felipeallyssamae@gmail.com">felipeallyssamae@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon" aria-hidden="true">
+                                        <i class="ri-instagram-line"></i>
+                                        <i class="ri-facebook-fill"></i>
+                                    </div>
+                                    <div class="method-details">
+                                        <h4 id="social-contact">Social Media</h4>
+                                        <p aria-labelledby="social-contact">@allyssamae_07</p>
+                                        <p aria-labelledby="social-contact">Allyssa Mae Felipe</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon" aria-hidden="true">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                    <div class="method-details">
+                                        <h4 id="response-time">Response Time</h4>
+                                        <p aria-labelledby="response-time">Within 48 hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-availability">
+                                <h4 id="availability">Current Availability</h4>
+                                <ul aria-labelledby="availability">
+                                    <li>Guest blog contributions</li>
+                                    <li>Travel photography collaborations</li>
+                                    <li>Speaking engagements about cultural exchange</li>
+                                    <li>Interviews about global travel experiences</li>
+                                    <li>Community partnerships and events</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Form -->
+                        <div class="contact-form-container">
+                            <h3 id="contact-form-heading">Send a Message</h3>
+                            <form class="contact-form" aria-labelledby="contact-form-heading">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" aria-required="true" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-required="true" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="6" placeholder="Type your message here..." aria-required="true" required></textarea>
+                                </div>
+                                
+                                <!-- Form status for screen readers -->
+                                <div id="form-status" aria-live="polite" class="sr-only"></div>
+                                
+                                <button type="submit" class="primary-btn">
+                                    <i class="ri-send-plane-line" aria-hidden="true"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ Section -->
+            <section class="faq-section" aria-labelledby="faq-heading">
+                <div class="section__container">
+                    <h3 class="section__subheader">Common Questions</h3>
+                    <h2 class="section__header" id="faq-heading">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-container">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                                <h4 id="faq-question-1">Do you accept guest posts from other travelers?</h4>
+                                <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                            </button>
+                            <div id="faq-answer-1" class="faq-answer" aria-labelledby="faq-question-1" hidden>
+                                <p>Yes! I welcome contributions from fellow travelers who have unique perspectives and stories to share. Please use the contact form to submit your proposal with a brief outline of your post idea, and I'll get back to you within 48 hours.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                                <h4 id="faq-question-2">Can I get travel advice for specific destinations?</h4>
+                                <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                            </button>
+                            <div id="faq-answer-2" class="faq-answer" aria-labelledby="faq-question-2" hidden>
+                                <p>Absolutely! I'm happy to share personalized travel advice based on my experiences. For specific destination guidance, it's best to email me with details about your trip plans, interests, and any particular questions you have.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                                <h4 id="faq-question-3">Are you available for speaking engagements or workshops?</h4>
+                                <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                            </button>
+                            <div id="faq-answer-3" class="faq-answer" aria-labelledby="faq-question-3" hidden>
+                                <p>Yes, I offer talks and workshops on topics related to travel, cultural immersion, and digital storytelling. I've spoken at universities, travel conferences, and community events. Please contact me with details about your event, and we can discuss availability and topics.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                                <h4 id="faq-question-4">How can I join your community events and meetups?</h4>
+                                <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                            </button>
+                            <div id="faq-answer-4" class="faq-answer" aria-labelledby="faq-question-4" hidden>
+                                <p>All community events are posted on the Community page of this website and announced through my newsletter. To participate, simply register for the specific event you're interested in. Many events are free, though some special workshops or retreats may have a fee to cover costs.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                                <h4 id="faq-question-5">Can I use your photos or content for my project?</h4>
+                                <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                            </button>
+                            <div id="faq-answer-5" class="faq-answer" aria-labelledby="faq-question-5" hidden>
+                                <p>All content on this website is copyrighted. For educational or non-commercial use, please contact me with specific details about how you'd like to use the content. For commercial licensing, I have different packages available depending on usage rights needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Map Embed Section -->
+            <section class="map-section" aria-labelledby="map-heading">
+                <div class="section__container">
+                    <h3 class="section__subheader">My Current Location</h3>
+                    <h2 class="section__header" id="map-heading">Where to Find Me</h2>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4969087662614!2d120.579374!3d14.5972789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM1JzQwLjIiTiAxMjDCsDM0JzQ1LjciRQ!5e0!3m2!1sen!2sus!4v1624954443811!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Map showing current location in the Philippines"
+                            aria-label="Interactive map showing my current location in the Philippines">
+                        </iframe>
+                    </div>
+                    
+                    <div class="map-info">
+                        <p><strong>Current Base:</strong> Between Manila, Philippines and Dublin, Ireland (check my social media for real-time updates)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="cta-section" aria-labelledby="cta-heading">
+                <div class="section__container">
+                    <h2 class="section__header" id="cta-heading">Let's Stay Connected</h2>
+                    <p>Follow my journey on social media and subscribe to my newsletter for exclusive updates and travel stories.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="primary-btn">Follow on Instagram</a>
+                        <a href="#" class="secondary-btn">Subscribe to Newsletter</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo" id="footer">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <div class="logo footer__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <p>
+                        "Progressing together in this called Life."
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Follow me on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow me on Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 id="community-links">Join Our Empowered Community</h4>
+                    <ul class="footer__links" aria-labelledby="community-links">
+                        <li><a href="about.html">About AMF</a></li>
+                        <li><a href="blog.html">Contributors & Writers</a></li>
+                        <li><a href="community.html">Write For Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="explore-links">Explore</h4>
+                    <ul class="footer__links" aria-labelledby="explore-links">
+                        <li><a href="about.html">My Story</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="blog.html">Blog Posts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="subscribe-heading">Subscribe</h4>
+                    <p>Stay updated with my latest adventures</p>
+                    <form class="footer-form" aria-labelledby="subscribe-heading">
+                        <label for="footer-email" class="sr-only">Your email</label>
+                        <input type="email" id="footer-email" name="email" placeholder="Your email" aria-required="true" required>
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="ri-send-plane-fill" aria-hidden="true"></i></button>
+                    </form>
+                    <div id="newsletter-status" aria-live="polite"></div>
+                </div>
+            </div>
+            <div class="footer__bar">
+                <p>© 2025 Allyssa's Life in Progress. All rights reserved.</p>
+                <p>We respect your privacy.</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

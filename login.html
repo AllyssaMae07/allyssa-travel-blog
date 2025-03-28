@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your account at Allyssa's Life in Progress to access exclusive content and community features.">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login | ALLYSSA</title>
+</head>
+<body>
+    <header class="header header-small">
+        <nav aria-label="Main navigation">
+            <div class="nav_bar">
+                <div class="logo nav__logo">
+                    <a href="#">AMF</a>
+                </div>
+                <ul class="nav__links" id="nav-links" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+                    <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="gallery.html" role="menuitem">Travel Gallery</a></li>
+                    <li role="none"><a href="community.html" role="menuitem">Community</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul> 
+                <div class="nav__menu__btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+                    <i class="ri-menu-line"></i>
+                </div>
+                <div class="nav__action__btn">
+                    <button class="btn" id="account-btn" aria-label="Account" aria-expanded="false" aria-controls="account-dropdown">
+                        <span><i class="ri-user-line"></i></span> Account
+                    </button>
+                    <div class="account-dropdown" id="account-dropdown">
+                        <div class="account-dropdown__content">
+                            <a href="login.html" class="account-link"><i class="ri-login-box-line"></i> Login</a>
+                            <a href="register.html" class="account-link"><i class="ri-user-add-line"></i> Register</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="settings.html" class="account-link"><i class="ri-settings-line"></i> Settings</a>
+                            <a href="help.html" class="account-link"><i class="ri-question-line"></i> Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="section__container">
+            <div class="auth-container">
+                <h2 class="section__header">Welcome Back</h2>
+                <p class="auth-description">Sign in to access your account, saved content, and community features.</p>
+                
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Your password" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="primary-btn auth-btn">Sign In</button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-auth">
+                    <button class="social-btn google-btn">
+                        <i class="ri-google-fill"></i> Continue with Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="ri-facebook-fill"></i> Continue with Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+</main>
+<footer class="footer" role="contentinfo" id="footer">
+    <div class="section__container footer__container">
+        <div class="footer__col">
+            <div class="logo footer__logo">
+                <a href="index.html">AMF</a>
+            </div>
+            <p>
+                "Progressing together in this called Life."
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="footer__col">
+            <h4>Join Our Empowered Community</h4>
+            <ul class="footer__links">
+                <li><a href="about.html">About AMF</a></li>
+                <li><a href="blog.html">Contributors & Writers</a></li>
+                <li><a href="community.html">Write For Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Explore</h4>
+            <ul class="footer__links">
+                <li><a href="about.html">My Story</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="blog.html">Blog Posts</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Subscribe</h4>
+            <p>Stay updated with my latest adventures</p>
+            <form class="footer-form">
+                <label for="footer-email" class="sr-only">Your email</label>
+                <input type="email" id="footer-email" placeholder="Your email" required>
+                <button type="submit" aria-label="Submit"><i class="ri-send-plane-fill" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>© 2025 Allyssa's Life in Progress. All rights reserved.</p>
+        <p>We respect your privacy.</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>

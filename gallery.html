@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Allyssa's travel photography from around the world - from the Philippines to Europe and beyond.">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Travel Gallery | ALLYSSA</title>
+    </head>
+    <body class="gallery-page">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <header class="header header-small" role="banner">
+            <nav aria-label="Main navigation">
+                <div class="nav_bar">
+                    <div class="logo nav__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <ul class="nav__links" id="nav-links" role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+                        <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                        <li role="none"><a href="gallery.html" class="active" role="menuitem" aria-current="page">Travel Gallery</a></li>
+                        <li role="none"><a href="community.html" role="menuitem">Community</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul> 
+                    <div class="nav__menu__btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+                        <i class="ri-menu-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="nav__action__btn">
+                        <button class="btn" id="account-btn" aria-label="Account" aria-expanded="false" aria-controls="account-dropdown">
+                            <span><i class="ri-user-line" aria-hidden="true"></i></span> Account
+                        </button>
+                        <div class="account-dropdown" id="account-dropdown">
+                            <div class="account-dropdown__content">
+                                <a href="login.html" class="account-link"><i class="ri-login-box-line" aria-hidden="true"></i> Login</a>
+                                <a href="register.html" class="account-link"><i class="ri-user-add-line" aria-hidden="true"></i> Register</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="settings.html" class="account-link"><i class="ri-settings-line" aria-hidden="true"></i> Settings</a>
+                                <a href="help.html" class="account-link"><i class="ri-question-line" aria-hidden="true"></i> Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="gallery-hero">
+                <div class="section__container">
+                    <h3 class="section__subheader">Visual Stories</h3>
+                    <h1 class="section__header">My Travel Photography</h1>
+                    <p class="header__description">Capturing moments, cultures, and landscapes from around the world through my lens.</p>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- Gallery Section -->
+            <section class="gallery-main" aria-labelledby="gallery-heading">
+                <div class="section__container">
+                    <h2 id="gallery-heading" class="sr-only">Travel Photo Gallery</h2>
+                    <div class="gallery-filter" role="tablist" aria-label="Filter gallery by location">
+                        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="gallery-grid">All Destinations</button>
+                        <button class="filter-btn" data-filter="philippines" role="tab" aria-selected="false" aria-controls="gallery-grid">Philippines</button>
+                        <button class="filter-btn" data-filter="europe" role="tab" aria-selected="false" aria-controls="gallery-grid">Europe</button>
+                        <button class="filter-btn" data-filter="asia" role="tab" aria-selected="false" aria-controls="gallery-grid">Asia</button>
+                        <button class="filter-btn" data-filter="nature" role="tab" aria-selected="false" aria-controls="gallery-grid">Nature</button>
+                        <button class="filter-btn" data-filter="urban" role="tab" aria-selected="false" aria-controls="gallery-grid">Urban</button>
+                    </div>
+                    
+                    <!-- Live region for filter announcements -->
+                    <div id="filter-announcement" class="sr-only" aria-live="polite"></div>
+                    
+                    <div id="gallery-grid" class="gallery-grid" role="tabpanel">
+                        <!-- Gallery Item 1 -->
+                        <div class="gallery-item appear" data-category="philippines" tabindex="0" role="button" aria-label="View Paradise Shores photo from Boracay, Philippines">
+                            <img src="img/Boracay.jpg" alt="Tropical beach in Boracay with white sand, crystal clear turquoise water, and surrounding limestone cliffs" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Paradise Shores</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Boracay, Philippines</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Item 2 -->
+                        <div class="gallery-item appear" data-category="europe" tabindex="0" role="button" aria-label="View Alpine Heights photo from Mont Blanc, France">
+                            <img src="img/mont blanc 1.jpg" alt="Snow-capped peaks of Mont Blanc mountain range with dramatic rocky outcroppings against clear blue sky" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Alpine Heights</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Mont Blanc, France</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Item 3 -->
+                        <div class="gallery-item appear" data-category="europe" tabindex="0" role="button" aria-label="View Catalan Wonder photo from Barcelona, Spain">
+                            <img src="img/Barcelona 3.jpg" alt="Colorful Gaudi architecture in Barcelona with distinctive mosaic patterns and unique structural designs" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Catalan Wonder</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Barcelona, Spain</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Item 4 -->
+                        <div class="gallery-item appear" data-category="philippines" tabindex="0" role="button" aria-label="View Local Life photo from Manila, Philippines">
+                            <img src="img/Intramuros.jpg" alt="Bustling Filipino market in Manila with colorful produce displays, vendors, and shoppers engaged in daily commerce" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Local Life</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Manila, Philippines</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Item 5 -->
+                        <div class="gallery-item appear" data-category="philippines" tabindex="0" role="button" aria-label="View Colonial Heritage photo from Vigan, Philippines">
+                            <img src="img/vigan2_2022.jpg" alt="Historic cobblestone street in Vigan with preserved Spanish colonial architecture and horse-drawn carriages" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Colonial Heritage</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Vigan, Philippines</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Item 6 -->
+                        <div class="gallery-item appear" data-category="europe" tabindex="0" role="button" aria-label="View Mountain Reflection photo from Swiss Alps">
+                            <img src="img/mont blanc 2.jpg" alt="Crystal clear alpine lake perfectly reflecting surrounding mountain peaks in the Swiss Alps" class="responsive-img">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Mountain Reflection</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Swiss Alps</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Hidden Gallery Items (revealed with "Load More") -->
+                        <div class="gallery-item hidden" data-category="asia" tabindex="-1" aria-hidden="true" role="button" aria-label="View Emerald Fields photo from Bali, Indonesia">
+                            <img data-src="img/placeholder-bali.jpg" alt="Lush terraced rice fields in Bali with vibrant green paddies cascading down hillsides" class="responsive-img lazy-image">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Emerald Fields</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Bali, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item hidden" data-category="urban" tabindex="-1" aria-hidden="true" role="button" aria-label="View Urban Pulse photo from Tokyo, Japan">
+                            <img data-src="img/placeholder-tokyo.jpg" alt="Nighttime Tokyo cityscape with neon lights, skyscrapers, and busy streets showcasing modern urban Japan" class="responsive-img lazy-image">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Urban Pulse</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item hidden" data-category="nature" tabindex="-1" aria-hidden="true" role="button" aria-label="View Hidden Falls photo from Siargao, Philippines">
+                            <img data-src="img/placeholder-waterfall.jpg" alt="Secluded tropical waterfall in Siargao with crystal clear water cascading into a natural pool surrounded by lush vegetation" class="responsive-img lazy-image">
+                            <div class="gallery-item-overlay">
+                                <h3 class="gallery-item-title">Hidden Falls</h3>
+                                <p class="gallery-item-location"><i class="ri-map-pin-line" aria-hidden="true"></i> Siargao, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="load-more">
+                        <button class="primary-btn" id="load-more-btn" aria-expanded="false" aria-controls="gallery-grid">Load More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photography Tips Section -->
+            <section class="photo-tips" aria-labelledby="photo-tips-heading">
+                <div class="section__container">
+                    <h3 class="section__subheader">Capture Your Own Memories</h3>
+                    <h2 class="section__header" id="photo-tips-heading">Travel Photography Tips</h2>
+                    
+                    <div class="tips-container">
+                        <div class="tip-card">
+                            <div class="tip-icon" aria-hidden="true">
+                                <i class="ri-sun-line"></i>
+                            </div>
+                            <h3 class="tip-title">Golden Hour Magic</h3>
+                            <p class="tip-content">
+                                Shoot during the first hour after sunrise or the last hour before sunset for warm, soft lighting that enhances any landscape or portrait.
+                            </p>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon" aria-hidden="true">
+                                <i class="ri-user-smile-line"></i>
+                            </div>
+                            <h3 class="tip-title">Connect with Locals</h3>
+                            <p class="tip-content">
+                                Always ask permission before photographing people. A smile and respect will often lead to authentic portraits and cultural exchanges.
+                            </p>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon" aria-hidden="true">
+                                <i class="ri-smartphone-line"></i>
+                            </div>
+                            <h3 class="tip-title">Phone Photography</h3>
+                            <p class="tip-content">
+                                You don't need expensive gear! Modern smartphones can capture amazing photos. Focus on composition and lighting rather than equipment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section" aria-labelledby="cta-heading">
+                <div class="section__container">
+                    <h2 class="section__header" id="cta-heading">Share Your Travel Photos</h2>
+                    <p>Join our community and share your own travel photographs. The best submissions get featured on our social media channels!</p>
+                    <div class="cta-buttons">
+                        <a href="community.html" class="primary-btn">Join the Community</a>
+                        <a href="contact.html" class="secondary-btn">Submit Photos</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <div class="logo footer__logo">
+                        <a href="index.html">AMF</a>
+                    </div>
+                    <p>
+                        "Progressing together in this called Life."
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Follow on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow on Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 id="community-links">Join Our Empowered Community</h4>
+                    <ul class="footer__links" aria-labelledby="community-links">
+                        <li><a href="about.html">About AMF</a></li>
+                        <li><a href="blog.html">Contributors & Writers</a></li>
+                        <li><a href="community.html">Write For Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="explore-links">Explore</h4>
+                    <ul class="footer__links" aria-labelledby="explore-links">
+                        <li><a href="about.html">My Story</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="blog.html">Blog Posts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 id="subscribe-heading">Subscribe</h4>
+                    <p>Stay updated with my latest adventures</p>
+                    <form class="footer-form" aria-labelledby="subscribe-heading">
+                        <label for="footer-email" class="sr-only">Your email</label>
+                        <input type="email" id="footer-email" placeholder="Your email" aria-label="Your email" aria-required="true" required>
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="ri-send-plane-fill" aria-hidden="true"></i></button>
+                    </form>
+                    <div id="newsletter-status" aria-live="polite"></div>
+                </div>
+            </div>
+            <div class="footer__bar">
+                <p>© 2025 Allyssa's Life in Progress. All rights reserved.</p>
+                <p>We respect your privacy.</p>
+            </div>
+        </footer>
+
+        <!-- Lightbox container for accessibility -->
+        <div id="lightbox-container" class="sr-only" aria-live="polite"></div>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
+        <script src="gallery.js"></script>
+    </body>
+</html>

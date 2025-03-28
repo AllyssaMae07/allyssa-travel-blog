@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get help and support for using Allyssa's Life in Progress community and blog.">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Help & Support | ALLYSSA</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header header-small" role="banner">
+        <nav aria-label="Main navigation">
+            <div class="nav_bar">
+                <div class="logo nav__logo">
+                    <a href="index.html">AMF</a>
+                </div>
+                <ul class="nav__links" id="nav-links" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">About Me</a></li>
+                    <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="gallery.html" role="menuitem">Travel Gallery</a></li>
+                    <li role="none"><a href="community.html" role="menuitem">Community</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul> 
+                <div class="nav__menu__btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </div>
+                <div class="nav__action__btn">
+                    <button class="btn" id="account-btn" aria-label="Account" aria-expanded="false" aria-controls="account-dropdown">
+                        <span><i class="ri-user-line" aria-hidden="true"></i></span> Account
+                    </button>
+                    <div class="account-dropdown" id="account-dropdown">
+                        <div class="account-dropdown__content">
+                            <a href="login.html" class="account-link"><i class="ri-login-box-line" aria-hidden="true"></i> Login</a>
+                            <a href="register.html" class="account-link"><i class="ri-user-add-line" aria-hidden="true"></i> Register</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="settings.html" class="account-link"><i class="ri-settings-line" aria-hidden="true"></i> Settings</a>
+                            <a href="help.html" class="account-link active" aria-current="page"><i class="ri-question-line" aria-hidden="true"></i> Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="help-hero" aria-labelledby="help-main-heading">
+            <div class="section__container">
+                <h1 class="section__header" id="help-main-heading">Help & Support</h1>
+                <p class="header__description">Find answers to common questions and learn how to get the most out of our community</p>
+                
+                <div class="help-search">
+                    <form class="search-form" role="search" aria-label="Search help topics">
+                        <label for="help-search" class="sr-only">Search for help topics</label>
+                        <input type="text" id="help-search" placeholder="Search for help topics..." aria-label="Search for help topics">
+                        <button type="submit" class="primary-btn">Search</button>
+                    </form>
+                    <div id="search-results-status" aria-live="polite" class="sr-only"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="help-categories" aria-labelledby="categories-heading">
+            <div class="section__container">
+                <h2 class="section__header" id="categories-heading">Help Categories</h2>
+                
+                <div class="categories-grid">
+                    <a href="#account" class="category-card">
+                        <div class="category-icon" aria-hidden="true"><i class="ri-user-settings-line"></i></div>
+                        <h3 class="category-title">Account Management</h3>
+                        <p class="category-description">Login, registration, and account settings</p>
+                    </a>
+                    
+                    <a href="#community" class="category-card">
+                        <div class="category-icon" aria-hidden="true"><i class="ri-group-line"></i></div>
+                        <h3 class="category-title">Community Features</h3>
+                        <p class="category-description">Interacting with our travel community</p>
+                    </a>
+                    
+                    <a href="#content" class="category-card">
+                        <div class="category-icon" aria-hidden="true"><i class="ri-file-list-3-line"></i></div>
+                        <h3 class="category-title">Content & Submissions</h3>
+                        <p class="category-description">Sharing stories and submitting content</p>
+                    </a>
+                    
+                    <a href="#technical" class="category-card">
+                        <div class="category-icon" aria-hidden="true"><i class="ri-settings-2-line"></i></div>
+                        <h3 class="category-title">Technical Support</h3>
+                        <p class="category-description">Browser issues and site performance</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="help-faq" id="account" aria-labelledby="faq-heading">
+            <div class="section__container">
+                <h2 class="section__header" id="faq-heading">Frequently Asked Questions</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-account-1">
+                            <h3>How do I create an account?</h3>
+                            <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                        </button>
+                        <div class="faq-answer" id="faq-account-1" hidden>
+                            <p>To create an account, click on the "Account" button in the top navigation bar and select "Register." Fill out the required information and submit the form. You'll receive a confirmation email to verify your account.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" id="community">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-community-1">
+                            <h3>How can I contribute a story to the blog?</h3>
+                            <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                        </button>
+                        <div class="faq-answer" id="faq-community-1" hidden>
+                            <p>After creating an account, visit the "Community" page and click on "Write For Us." You'll find guidelines for submissions and a form to submit your travel story for review.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-account-2">
+                            <h3>How do I reset my password?</h3>
+                            <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                        </button>
+                        <div class="faq-answer" id="faq-account-2" hidden>
+                            <p>On the login page, click "Forgot password?" and enter your email address. We'll send you a link to reset your password. For security reasons, the link will expire after 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" id="content">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-account-3">
+                            <h3>Can I change my username?</h3>
+                            <div class="faq-icon" aria-hidden="true"><i class="ri-add-line"></i></div>
+                        </button>
+                        <div class="faq-answer" id="faq-account-3" hidden>
+                            <p>Yes, you can change your username in your account settings. Go to your profile, click on "Settings," then navigate to the "Account" tab to update your username.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-support" id="technical" aria-labelledby="contact-support-heading">
+            <div class="section__container">
+                <h2 class="section__header" id="contact-support-heading">Still Need Help?</h2>
+                <p>If you couldn't find answers to your questions, please reach out to our support team.</p>
+                
+                <div class="support-options">
+                    <a href="contact.html" class="primary-btn">Contact Support</a>
+                    <a href="mailto:support@allyssaslife.com" class="secondary-btn">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <a href="index.html">AMF</a>
+                </div>
+                <p>
+                    "Progressing together in this called Life."
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Follow on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Follow on Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4 id="community-links">Join Our Empowered Community</h4>
+                <ul class="footer__links" aria-labelledby="community-links">
+                    <li><a href="about.html">About AMF</a></li>
+                    <li><a href="blog.html">Contributors & Writers</a></li>
+                    <li><a href="community.html">Write For Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 id="explore-links">Explore</h4>
+                <ul class="footer__links" aria-labelledby="explore-links">
+                    <li><a href="about.html">My Story</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="blog.html">Blog Posts</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 id="subscribe-heading">Subscribe</h4>
+                <p>Stay updated with my latest adventures</p>
+                <form class="footer-form" aria-labelledby="subscribe-heading">
+                    <label for="footer-email" class="sr-only">Your email</label>
+                    <input type="email" id="footer-email" placeholder="Your email" aria-required="true" required>
+                    <button type="submit" aria-label="Subscribe to newsletter"><i class="ri-send-plane-fill" aria-hidden="true"></i></button>
+                </form>
+                <div id="newsletter-status" aria-live="polite"></div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>© 2025 Allyssa's Life in Progress. All rights reserved.</p>
+            <p>We respect your privacy.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
